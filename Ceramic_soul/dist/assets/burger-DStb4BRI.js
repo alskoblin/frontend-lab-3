@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector(".menu-close"),n=document.querySelector(".burger-checkbox");e&&n?e.addEventListener("click",()=>{n.checked=!1}):console.warn("Menu elements not found")});
