@@ -1,6 +1,5 @@
-import './slider'
 import '../sass/style.scss';
-import './validation'
-
-
-
+import './apiback';
+import './slider';
+import './burger';
+import './validation';
