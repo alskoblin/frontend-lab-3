@@ -184,7 +184,8 @@ ul, ol {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 34% 2fr 1fr;
-  gap:25px
+  gap:25px;
+  position : relative;
   
 }
 
@@ -229,7 +230,19 @@ ul, ol {
   justify-content: space-between;
   grid-column: 3 / 4; 
   grid-row: 2 / 4; 
+  position: absolute; 
+  top: 50%; 
+  right: -100%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: right 1s ease-out, opacity 1s ease-out;
+  gap:20px;
 }
+.promo_image_vase.active {
+  right: 0;
+  opacity: 1;
+}
+
 
 .promo_image_vase img {
   object-fit: cover;
@@ -517,7 +530,9 @@ form button{
     max-width: 1355px;
     height: 423px;
     margin: 0 auto;
+    margin-bottom: 120px;
   }
+  
   
   .works__title {
     font-size: 36px;
