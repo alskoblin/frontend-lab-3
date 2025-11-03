@@ -230,17 +230,21 @@ ul, ol {
   justify-content: space-between;
   grid-column: 3 / 4; 
   grid-row: 2 / 4; 
-  position: absolute; 
-  top: 50%; 
-  right: -100%;
-  transform: translateY(-50%);
-  opacity: 0;
-  transition: right 1s ease-out, opacity 1s ease-out;
-  gap:20px;
 }
-.promo_image_vase.active {
-  right: 0;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .promo_image_vase {
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: right 1s ease-out, opacity 1s ease-out;
+  }
+
+  .promo_image_vase.active {
+    right: 0;
+    opacity: 1;
+  }
 }
 
 
