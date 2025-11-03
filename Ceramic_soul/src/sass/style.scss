@@ -233,12 +233,14 @@ ul, ol {
 }
 @media (min-width: 1024px) {
   .promo_image_vase {
+    display: flex;
     position: absolute;
     top: 50%;
     right: -100%;
     transform: translateY(-50%);
     opacity: 0;
     transition: right 1s ease-out, opacity 1s ease-out;
+    gap: 20px;
   }
 
   .promo_image_vase.active {
